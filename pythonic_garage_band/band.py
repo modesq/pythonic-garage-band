@@ -2,6 +2,11 @@ from abc import ABC
 
 
 class Band:
+    """
+    this class represents a band which can be used to represent all of its memebers in a list alongside some
+    methods that can be used to print them or play their solos
+    """
+
     instances = []
 
     def __init__(self, name, members):
@@ -27,6 +32,11 @@ class Band:
 
 
 class Musician(ABC):
+    """
+    this the parent abstract class for the classes "Guitarist", "Drummer", and "Bassist". it has the methods that they inherit.
+    the abstract methods "play_solos()" and "get_instrument() need to be implemented in the children classes.
+    """
+
     def __init__(self, name):
         self.name = name
 
@@ -49,6 +59,10 @@ class Musician(ABC):
 
 
 class Guitarist(Musician):
+    """
+    this is a child class that inherits from class "Musician" and it implements its abstract methods as needed for this class
+    """
+
     def __init__(self, name):
         super().__init__(name)
 
@@ -62,6 +76,10 @@ class Guitarist(Musician):
 
 
 class Drummer(Musician):
+    """
+    this is a child class that inherits from class "Musician" and it implements its abstract methods as needed for this class
+    """
+
     def __init__(self, name):
         super().__init__(name)
 
@@ -75,6 +93,10 @@ class Drummer(Musician):
 
 
 class Bassist(Musician):
+    """
+    this is a child class that inherits from class "Musician" and it implements its abstract methods as needed for this class
+    """
+
     def __init__(self, name):
         super().__init__(name)
 
@@ -85,15 +107,3 @@ class Bassist(Musician):
     @staticmethod
     def play_solo():
         return "bom bom buh bom"
-
-# class Keyboardist(Musician):
-#     def __init__(self, name):
-#         super().__init__(name)
-
-#     # @staticmethod
-#     def get_instrument():
-#         return "keyboard"
-
-#     # @staticmethod
-#     def play_solo():
-#         return "clickity clack"
