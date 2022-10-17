@@ -8,7 +8,6 @@ from pythonic_garage_band.band import (
     Guitarist,
     Bassist,
     Drummer,
-    Keyboardist,
 )
 
 
