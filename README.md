@@ -2,7 +2,7 @@
 
 ## Project: pythonic-garage-band
 
-### Author: Student/Group Name
+### Author: Mahmoud Qunbor
 
 ### Setup
 
