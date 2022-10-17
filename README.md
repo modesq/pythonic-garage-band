@@ -25,4 +25,5 @@
 
     i couldnt do 3 of the stretch tests because they werent clear enough and i didnt understand what was requested
 
-[pull request](https://github.com/modesq/pythonic-garage-band/pull/2)
+[pull request](https://github.com/modesq/pythonic-garage-band/pull/3)
+
